@@ -92,7 +92,7 @@ footer {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 24px;
-    color: #333;
+    color: (rgb 255, 255, 255;
     font-weight: bold;
 }
 
@@ -336,4 +336,5 @@ footer {
 .progress-fill[data-progress="100"] {
     animation-duration: 2s;
 }
+
 
