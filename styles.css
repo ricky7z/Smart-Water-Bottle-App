@@ -337,3 +337,23 @@ footer {
     animation-duration: 2s;
 }
 
+.container ｛
+display: grid;
+grid-template-rows: 80px auto 1fr auto 50px; grid-template-columns: 1fr 4fr 1fr; height: 100h;
+grid-template-areas:
+"header
+header
+"left-aside
+banner
+"left-aside
+main
+"left-aside
+low-content
+"footer
+footer
+header" right-aside" right-aside" right-aside" footer";
+grid-gap: 10px;
+padding: 10px;
+font-weight: 600;
+font-size: 20px;
+
