@@ -1,0 +1,350 @@
+/* Define default (light mode) colors */
+:root {
+    --bg-color: white;
+    --text-color: black;
+    --primary-color: #4CAF50; /* Original green color */
+  }
+  
+  /* Apply the colors to the body */
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Define dark mode colors */
+  body.dark-mode {
+    --bg-color: #121212; /* Dark background color */
+    --text-color: #E0E0E0; /* Light text color */
+    --primary-color: #388E3C; /* Darker green color */
+  }
+  
+  /* Style the button */
+  button {
+    padding: 10px 20px;
+    margin: 20px;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /*background-color: #f4f4f4;*/
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin: 20px 0;
+    padding: 20px;
+   /* background-color: white;*/
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Circular progress bar container */
+.progress-container {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+/* Circular progress bar background */
+.progress {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #ddd;
+    z-index: 1;
+}
+
+/* Circular progress bar animation */
+.progress-fill {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #4CAF50;
+    clip: rect(0, 75px, 150px, 0); /* Clip the progress bar to half circle */
+    animation: fill-progress 2s forwards; /* Animation duration and fill forwards */
+}
+
+/* Animation keyframes */
+@keyframes fill-progress {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Percentage text */
+.progress-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+    z-index: 2; /* Ensure it is above the progress bar */
+}
+
+/* Center align the text */
+.progress-text span {
+    display: block;
+    text-align: center;
+}
+
+/* Adjust animation speed for different percentages */
+.progress-fill[data-progress="0"] {
+    animation-duration: 0s;
+}
+
+.progress-fill[data-progress="25"] {
+    animation-duration: 0.5s;
+}
+
+.progress-fill[data-progress="50"] {
+    animation-duration: 1s;
+}
+
+.progress-fill[data-progress="75"] {
+    animation-duration: 1.5s;
+}
+
+.progress-fill[data-progress="100"] {
+    animation-duration: 2s;
+}
+
+/* Sync Data Section */
+#sync .sync-icon {
+    font-size: 30px;
+    color: #4CAF50;
+    animation: float 2s;
+}
+
+@keyframes float {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Send Reminders Section */
+#reminders .reminder-icon {
+    font-size: 30px;
+    color: #ff9800;
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Provide Insights Section */
+#insights .gear-icon {
+    font-size: 30px;
+    color: #2196F3;
+    animation: rotate 5s infinite;
+}
+
+@keyframes rotate {
+    10% {
+        transform: rotate(1deg);
+    }
+}
+
+/* Personalized Recommendations Section */
+#recommendations .heart-icon {
+    font-size: 30px;
+    color: #f44336;
+    animation: float 5s linear infinite;
+}
+
+/* Enable Social Sharing Section */
+#social .social-icon {
+    font-size: 40px;
+    color: #03A9F4;
+    animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Maintenance Alerts Section */
+#alerts .wrench-icon {
+    font-size: 40px;
+    color: #795548;
+    animation: blink 5s infinite;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+
+
+/* Define default (light mode) colors */
+:root {
+    --bg-color: white;
+    --text-color: black;
+    --primary-color: #4CAF50; /* Original green color */
+  }
+  
+  /* Apply the colors to the body */
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Define dark mode colors */
+  body.dark-mode {
+    --bg-color: #121212; /* Dark background color */
+    --text-color: #E0E0E0; /* Light text color */
+    --primary-color: #388E3C; /* Darker green color */
+  }
+  
+  /* Style the header */
+  header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    position: relative;
+  }
+  
+  /* Style the nav */
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  /* Nav toggle button for mobile */
+  .nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+  }
+  
+  /* Style the nav list */
+  .nav-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .nav-list li {
+    margin: 0 15px;
+  }
+  
+  .nav-list li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  button {
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .nav-toggle {
+      display: block;
+    }
+  
+    .nav-list {
+      flex-direction: column;
+      display: none;
+      width: 100%;
+      text-align: center;
+    }
+  
+    .nav-list li {
+      margin: 10px 0;
+    }
+  
+    .nav-list.show {
+      display: flex;
+    }
+  }
+  
