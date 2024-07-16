@@ -23,7 +23,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 
@@ -125,12 +125,12 @@ footer {
 
 /* Sync Data Section */
 #sync .sync-icon {
-    font-size: 48px;
+    font-size: 30px;
     color: #4CAF50;
-    animation: pulse 2s;
+    animation: float 2s;
 }
 
-@keyframes pulse {
+@keyframes float {
     0% {
         transform: scale(1);
     }
@@ -144,7 +144,7 @@ footer {
 
 /* Send Reminders Section */
 #reminders .reminder-icon {
-    font-size: 48px;
+    font-size: 30px;
     color: #ff9800;
     animation: bounce 1s infinite;
 }
@@ -160,29 +160,29 @@ footer {
 
 /* Provide Insights Section */
 #insights .gear-icon {
-    font-size: 8px;
+    font-size: 30px;
     color: #2196F3;
-    animation: rotate 0.01s linear infinite;
+    animation: rotate 5s infinite;
 }
 
 @keyframes rotate {
     10% {
-        transform: rotate(0.03deg);
+        transform: rotate(1deg);
     }
 }
 
 /* Personalized Recommendations Section */
 #recommendations .heart-icon {
-    font-size: 48px;
+    font-size: 30px;
     color: #f44336;
-    animation: pulse 1.5s infinite;
+    animation: float 5s linear infinite;
 }
 
 /* Enable Social Sharing Section */
 #social .social-icon {
-    font-size: 48px;
+    font-size: 40px;
     color: #03A9F4;
-    animation: float 2s ease-in-out infinite;
+    animation: float 5s ease-in-out infinite;
 }
 
 @keyframes float {
@@ -196,7 +196,7 @@ footer {
 
 /* Maintenance Alerts Section */
 #alerts .wrench-icon {
-    font-size: 48px;
+    font-size: 40px;
     color: #795548;
     animation: blink 5s infinite;
 }
