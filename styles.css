@@ -160,7 +160,7 @@ footer {
 
 /* Provide Insights Section */
 #insights .gear-icon {
-    font-size: 0.4px;
+    font-size: 8px;
     color: #2196F3;
     animation: rotate 0.01s linear infinite;
 }
