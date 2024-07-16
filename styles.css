@@ -243,3 +243,108 @@ footer {
         opacity: 0;
     }
 }
+
+
+
+/* Define default (light mode) colors */
+:root {
+    --bg-color: white;
+    --text-color: black;
+    --primary-color: #4CAF50; /* Original green color */
+  }
+  
+  /* Apply the colors to the body */
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Define dark mode colors */
+  body.dark-mode {
+    --bg-color: #121212; /* Dark background color */
+    --text-color: #E0E0E0; /* Light text color */
+    --primary-color: #388E3C; /* Darker green color */
+  }
+  
+  /* Style the header */
+  header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    position: relative;
+  }
+  
+  /* Style the nav */
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  /* Nav toggle button for mobile */
+  .nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+  }
+  
+  /* Style the nav list */
+  .nav-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .nav-list li {
+    margin: 0 15px;
+  }
+  
+  .nav-list li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  button {
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .nav-toggle {
+      display: block;
+    }
+  
+    .nav-list {
+      flex-direction: column;
+      display: none;
+      width: 100%;
+      text-align: center;
+    }
+  
+    .nav-list li {
+      margin: 10px 0;
+    }
+  
+    .nav-list.show {
+      display: flex;
+    }
+  }
+  
