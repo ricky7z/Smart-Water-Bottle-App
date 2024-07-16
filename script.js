@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const toggleButton = document.getElementById('toggleDarkMode');
+    const navToggle = document.getElementById('navToggle');
+    const navList = document.querySelector('.nav-list');
   
     // Check for saved preference and apply it
     if (localStorage.getItem('darkMode') === 'enabled') {
@@ -15,6 +17,10 @@ document.addEventListener('DOMContentLoaded', () => {
       } else {
         localStorage.removeItem('darkMode');
       }
+    });
+  
+    navToggle.addEventListener('click', () => {
+      navList.classList.toggle('show');
     });
   });
   
