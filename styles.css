@@ -1,8 +1,42 @@
+/* Define default (light mode) colors */
+:root {
+    --bg-color: white;
+    --text-color: black;
+    --primary-color: #4CAF50; /* Original green color */
+  }
+  
+  /* Apply the colors to the body */
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Define dark mode colors */
+  body.dark-mode {
+    --bg-color: #121212; /* Dark background color */
+    --text-color: #E0E0E0; /* Light text color */
+    --primary-color: #388E3C; /* Darker green color */
+  }
+  
+  /* Style the button */
+  button {
+    padding: 10px 20px;
+    margin: 20px;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    /*background-color: #f4f4f4;*/
 }
 
 header {
@@ -34,7 +68,7 @@ main {
 section {
     margin: 20px 0;
     padding: 20px;
-    background-color: white;
+   /* background-color: white;*/
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
