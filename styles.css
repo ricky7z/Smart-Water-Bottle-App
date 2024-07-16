@@ -162,12 +162,12 @@ footer {
 #insights .gear-icon {
     font-size: 48px;
     color: #2196F3;
-    animation: rotate 0.8s linear infinite;
+    animation: rotate 0.1s linear infinite;
 }
 
 @keyframes rotate {
     100% {
-        transform: rotate(360deg);
+        transform: rotate(0.6deg);
     }
 }
 
