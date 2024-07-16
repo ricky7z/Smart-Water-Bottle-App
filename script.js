@@ -4,7 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const navList = document.querySelector('.nav-list');
   
     // Check for saved preference and apply it
-    if (localStorage.getItem('darkMode') === 'enabled') {
+    if (localStorage.getItem('darkMode') === 'enabled' || 
+        (!localStorage.getItem('darkMode') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
       document.body.classList.add('dark-mode');
     }
   
