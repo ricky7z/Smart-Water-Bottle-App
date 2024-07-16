@@ -17,7 +17,17 @@
     --bg-color: #121212; /* Dark background color */
     --text-color: #E0E0E0; /* Light text color */
     --primary-color: #388E3C; /* Darker green color */
+
+
+/* Apply dark mode if the user's device is set to dark mode */
+@media (prefers-color-scheme: dark) {
+    :root {
+      --bg-color: #121212; /* Dark background color */
+      --text-color: #E0E0E0; /* Light text color */
+      --primary-color: #388E3C; /* Darker green color */
+    }
   }
+}
   
   /* Style the button */
   button {
@@ -347,4 +357,8 @@ footer {
       display: flex;
     }
   }
+  
+
+
+
   
